@@ -81,9 +81,6 @@ namespace MartinezBianchi.Michelle._4i.Stampante
 
                 case Colore.Black:
                     return this.Black;
-
-                default:
-                    return -1;
             }
         }
 
