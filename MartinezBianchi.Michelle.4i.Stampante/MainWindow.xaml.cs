@@ -206,7 +206,6 @@ namespace MartinezBianchi.Michelle._4i.Stampante
                 );
                 if (stampante.Stampa(rndPag))
                 {
-                    MessageBox.Show("Stampa avvenuta con successo!");
                     srbC.Text = stampante.Cyan.ToString();
                     srbM.Text = stampante.Magenta.ToString();
                     srbY.Text = stampante.Yellow.ToString();
@@ -242,7 +241,6 @@ namespace MartinezBianchi.Michelle._4i.Stampante
                 Convert.ToInt32(prsB.Text)
                 );
                 if (stampante.Stampa(prsPag)) { 
-                    MessageBox.Show("Stampa avvenuta con successo!");
                     srbC.Text = stampante.Cyan.ToString();
                     srbM.Text = stampante.Magenta.ToString();
                     srbY.Text = stampante.Yellow.ToString();
