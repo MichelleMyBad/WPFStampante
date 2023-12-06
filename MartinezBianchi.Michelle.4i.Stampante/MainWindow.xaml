@@ -218,7 +218,7 @@
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
 
-            <Button Grid.Row="0" Background="Magenta" Click="Button_Click_11">Ricarica serbatoio</Button>
+            <Button Grid.Row="0" Background="Magenta" Click="Button_Click_11" Height="30" VerticalAlignment="Top">Ricarica serbatoio</Button>
             <TextBlock Grid.Row="1" Background="Magenta" IsEnabled="False"></TextBlock>
             <TextBlock Grid.Row="1" FontSize="40" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="srbM">0</TextBlock>
 

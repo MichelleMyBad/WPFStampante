@@ -24,14 +24,6 @@ namespace MartinezBianchi.Michelle._4i.Stampante
 
         //-4 serbatoi di colore: CMYB e un cassetto di fogli (tutte property int)
 
-        public enum Colore { 
-        
-            Cyan,
-            Magenta,
-            Yellow,
-            Black
-        }
-
         public int Carta { get; set; }
         public int Cyan { get; set; }
         public int Magenta { get; set; }

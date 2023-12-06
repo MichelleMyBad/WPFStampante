@@ -147,7 +147,7 @@ namespace MartinezBianchi.Michelle._4i.Stampante
                 MessageBox.Show("Il serbatoio è pieno");
                 return;
             }
-            stampante.SostituisciColore(Stampante.Colore.Cyan);
+            stampante.SostituisciColore(Colore.Cyan);
             srbC.Text = stampante.Cyan.ToString();
         }
 
@@ -160,7 +160,7 @@ namespace MartinezBianchi.Michelle._4i.Stampante
                 MessageBox.Show("Il serbatoio è pieno");
                 return;
             }
-            stampante.SostituisciColore(Stampante.Colore.Magenta);
+            stampante.SostituisciColore(Colore.Magenta);
             srbM.Text = stampante.Magenta.ToString();
         }
 
@@ -172,7 +172,7 @@ namespace MartinezBianchi.Michelle._4i.Stampante
                 MessageBox.Show("Il serbatoio è pieno");
                 return;
             }
-            stampante.SostituisciColore(Stampante.Colore.Yellow);
+            stampante.SostituisciColore(Colore.Yellow);
             srbY.Text = stampante.Yellow.ToString();
         }
 
@@ -183,7 +183,7 @@ namespace MartinezBianchi.Michelle._4i.Stampante
                 MessageBox.Show("Il serbatoio è pieno");
                 return;
             }
-            stampante.SostituisciColore(Stampante.Colore.Black);
+            stampante.SostituisciColore(Colore.Black);
             srbB.Text = stampante.Black.ToString();
         }
 
