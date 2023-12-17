@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MartinezBianchi.Michelle._4i.Stampante"
         mc:Ignorable="d"
-        Title="Stampante" Height="450" Width="800"
+        Title="Stampante" Height="700" Width="900"
         WindowStartupLocation="CenterScreen"
         >
     <Grid>
@@ -13,8 +13,8 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
+            <RowDefinition Height="220"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
@@ -22,49 +22,111 @@
         </Grid.ColumnDefinitions>
 
 
-        <!--GENERAZIONE PAGINA-->
-        <!--riga 0 -->
 
-        <!--Genera pagina randomica-->
+        <!--STATISTICHE UGELLI-->
+        <!--riga 0-->
         <!--colonna 0-->
         <Grid Grid.Row="0" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="0" Background="Cyan" Click="Button_Click_10">Ricarica serbatoio</Button>
+            <TextBlock Grid.Row="1" Background="Cyan" IsEnabled="False"></TextBlock>
+            <TextBlock Grid.Row="1" FontSize="40" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="srbC">0</TextBlock>
+
+        </Grid>
+
+        <!--colonna 1-->
+        <Grid Grid.Row="0" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="0" Background="Magenta" Click="Button_Click_11" Height="30" VerticalAlignment="Top">Ricarica serbatoio</Button>
+            <TextBlock Grid.Row="1" Background="Magenta" IsEnabled="False"></TextBlock>
+            <TextBlock Grid.Row="1" FontSize="40" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="srbM">0</TextBlock>
+
+        </Grid>
+
+        <!--riga 1-->
+        <!--colonna 0-->
+        <Grid Grid.Row="1" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="0" Background="Yellow" Click="Button_Click_12">Ricarica serbatoio</Button>
+            <TextBlock Grid.Row="1" Background="Yellow" IsEnabled="False"></TextBlock>
+            <TextBlock Grid.Row="1" FontSize="40" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="srbY">0</TextBlock>
+
+        </Grid>
+
+        <!--colonna 1-->
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="0" Background="Black" Foreground="White" Click="Button_Click_13">Ricarica serbatoio</Button>
+            <TextBlock Grid.Row="1" Background="Black" IsEnabled="False"></TextBlock>
+            <TextBlock Grid.Row="1" FontSize="40" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" x:Name="srbK">0</TextBlock>
+
+        </Grid>
+
+
+        <!--FOGLI-->
+        <!--riga 2-->
+
+        <!--colonna 0-->
+        <!--Fogli diponibili-->
+        <Border Grid.Row="2" BorderBrush="Black" BorderThickness="1">
+        <Grid Grid.Row="2" Grid.Column="0">
             <Grid.RowDefinitions>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-            </Grid.ColumnDefinitions>
+            
+            <!--riga 0-->
+            <TextBlock Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25">Fogli disponibili</TextBlock>
+            
+            <!--riga 1-->
+            <TextBlock Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25" x:Name="fogliNum">0</TextBlock>
+            
+        </Grid>
+        </Border>
+
+
+
+        <!--colonna 1-->
+        <!--Aggiungi fogli-->
+        <Grid Grid.Row="2" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
 
             <!--riga 0-->
-            <Button Grid.Row="0" Grid.ColumnSpan="4" FontSize="20" Background="LightGray" Click="Button_Click">Crea pagina randomicamente</Button>
+            <Button Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="25" Click="Button_Click_9">Aggiungi fogli</Button>
 
             <!--riga 1-->
-            <!--colonna 0-->
-            <TextBlock Grid.Row="1" Grid.Column="0" Background="Cyan" IsEnabled="False"></TextBlock>
-            <TextBlock Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Background="Transparent" x:Name="rndmC">0</TextBlock>
-
-            <!--colonna 1-->
-            <TextBlock Grid.Row="1" Grid.Column="1" Background="Magenta" IsEnabled="False"></TextBlock>
-            <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Background="Transparent" x:Name="rndmM">0</TextBlock>
-
-            <!--colonna 2-->
-            <TextBlock Grid.Row="1" Grid.Column="2" Background="Yellow" IsEnabled="False"></TextBlock>
-            <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Background="Transparent" x:Name="rndmY">0</TextBlock>
-
-            <!--colonna 3-->
-            <TextBlock Grid.Row="1" Grid.Column="3" Background="Black" IsEnabled="False"></TextBlock>
-            <TextBlock Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Background="Transparent" Foreground="White" x:Name="rndmB">0</TextBlock>
+            <Border Grid.Row="1" BorderBrush="Black" BorderThickness="1">
+            <TextBox Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25" BorderThickness="0" x:Name="fogliAdd">0</TextBox>
+            </Border>
         </Grid>
+        
+        
 
 
+        <!--GENERAZIONE PAGINA-->
+        <!--riga 3 -->
 
-        <!--Genera pagina personalizzzata-->
         <!--colonna 1-->
-        <Grid Grid.Row="0" Grid.Column="1">
+        <Grid Grid.Row="3" Grid.ColumnSpan="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
@@ -72,6 +134,8 @@
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
@@ -80,7 +144,7 @@
 
             <Border></Border>
             <!--riga 0-->
-            <TextBox Grid.Row="0" Grid.ColumnSpan="4" HorizontalAlignment="Center" FontSize="15" BorderThickness="0" Background="White">Crea pagina personalizzata</TextBox>
+            <TextBox Grid.Row="0" Grid.ColumnSpan="4" HorizontalAlignment="Center" FontSize="15" BorderThickness="0" Background="White" VerticalContentAlignment="Center">Creazione pagina</TextBox>
 
             <!--riga 1-->
             <!--colonna 0-->
@@ -102,42 +166,42 @@
             <!--colonna 0-->
 
             <TextBlock Grid.Row="2" Grid.Column="0"
-                Background="Cyan" IsEnabled="False"
-                     ></TextBlock>
+         Background="Cyan" IsEnabled="False"
+              ></TextBlock>
 
             <TextBlock Grid.Row="2" Grid.Column="0" 
-                       HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"
-                       Background="Transparent" x:Name="prsC"
-                       >0</TextBlock>
+                HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"
+                Background="Transparent" x:Name="prsC"
+                >0</TextBlock>
 
             <!--colonna 1-->
             <TextBlock Grid.Row="2" Grid.Column="1"
-                 Background="Magenta" IsEnabled="False"
-                     ></TextBlock>
+          Background="Magenta" IsEnabled="False"
+              ></TextBlock>
 
             <TextBlock Grid.Row="2" Grid.Column="1" 
-                     HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"
-                       Background="Transparent" x:Name="prsM"
-                     >0</TextBlock>
+              HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"
+                Background="Transparent" x:Name="prsM"
+              >0</TextBlock>
 
             <!--colonna 2-->
             <TextBlock Grid.Row="2" Grid.Column="2"
-                 Background="Yellow" IsEnabled="False"
-                     ></TextBlock>
+          Background="Yellow" IsEnabled="False"
+              ></TextBlock>
 
             <TextBlock Grid.Row="2" Grid.Column="2" 
-                     HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"
-                       Background="Transparent" x:Name="prsY"
-                     >0</TextBlock>
+              HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"
+                Background="Transparent" x:Name="prsY"
+              >0</TextBlock>
 
             <!--colonna 3-->
             <TextBlock Grid.Row="2" Grid.Column="3"
-                 Background="Black" IsEnabled="False"
-                     ></TextBlock>
+          Background="Black" IsEnabled="False"
+              ></TextBlock>
             <TextBlock Grid.Row="2" Grid.Column="3" 
-                     HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"
-                        Background="Transparent" Foreground="White" x:Name="prsB"
-                     >0</TextBlock>
+              HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"
+                 Background="Transparent" Foreground="White" x:Name="prsK"
+              >0</TextBlock>
 
 
 
@@ -154,108 +218,29 @@
             <!--colonna 3-->
             <Button Grid.Row="3" Grid.Column="3" Background="Black" Click="Button_Click_8" Foreground="White">-</Button>
 
-        </Grid>
+
+            <!--riga 4-->
+            <Button Grid.Row="4" Grid.Column="0" Background="Cyan" FontSize="10" Click="Button_Click">Random</Button>
+
+            <!--colonna 1-->
+            <Button Grid.Row="4" Grid.Column="1" Background="Magenta" FontSize="10" Click="Button_Click_16">Random</Button>
+
+            <!--colonna 2-->
+            <Button Grid.Row="4" Grid.Column="2" Background="Yellow" FontSize="10" Click="Button_Click_17">Random</Button>
+
+            <!--colonna 3-->
+            <Button Grid.Row="4" Grid.Column="3" Background="Black" Foreground="White" FontSize="10" Click="Button_Click_18">Random</Button>
 
 
-
-
-        <!--FOGLI-->
-        <!--riga 1-->
-
-        <!--colonna 0-->
-        <!--Fogli diponibili-->
-        <Grid Grid.Row="1" Grid.Column="0">
-            <Grid.RowDefinitions>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-            </Grid.RowDefinitions>
-
-            <!--riga 0-->
-            <TextBlock Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25">Fogli disponibili</TextBlock>
-
-            <!--riga 1-->
-            <TextBlock Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25" x:Name="fogliNum">0</TextBlock>
-        </Grid>
-
-
-
-        <!--colonna 1-->
-        <!--Aggiungi fogli-->
-        <Grid Grid.Row="1" Grid.Column="1">
-            <Grid.RowDefinitions>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-            </Grid.RowDefinitions>
-
-            <!--riga 0-->
-            <Button Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="25" Click="Button_Click_9">Aggiungi fogli</Button>
-
-            <!--riga 1-->
-            <TextBox Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25" BorderThickness="0" x:Name="fogliAdd">0</TextBox>
-        </Grid>
-
-
-
-        <!--STATISTICHE UGELLI-->
-        <!--riga 2-->
-        <!--colonna 0-->
-        <Grid Grid.Row="2" Grid.Column="0">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="30"></RowDefinition>
-                <RowDefinition></RowDefinition>
-            </Grid.RowDefinitions>
-
-            <Button Grid.Row="0" Background="Cyan" Click="Button_Click_10">Ricarica serbatoio</Button>
-            <TextBlock Grid.Row="1" Background="Cyan" IsEnabled="False"></TextBlock>
-            <TextBlock Grid.Row="1" FontSize="40" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="srbC">0</TextBlock>
-
-        </Grid>
-
-        <!--colonna 1-->
-        <Grid Grid.Row="2" Grid.Column="1">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="30"></RowDefinition>
-                <RowDefinition></RowDefinition>
-            </Grid.RowDefinitions>
-
-            <Button Grid.Row="0" Background="Magenta" Click="Button_Click_11" Height="30" VerticalAlignment="Top">Ricarica serbatoio</Button>
-            <TextBlock Grid.Row="1" Background="Magenta" IsEnabled="False"></TextBlock>
-            <TextBlock Grid.Row="1" FontSize="40" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="srbM">0</TextBlock>
-
-        </Grid>
-
-        <!--riga 3-->
-        <!--colonna 0-->
-        <Grid Grid.Row="3" Grid.Column="0">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="30"></RowDefinition>
-                <RowDefinition></RowDefinition>
-            </Grid.RowDefinitions>
-
-            <Button Grid.Row="0" Background="Yellow" Click="Button_Click_12">Ricarica serbatoio</Button>
-            <TextBlock Grid.Row="1" Background="Yellow" IsEnabled="False"></TextBlock>
-            <TextBlock Grid.Row="1" FontSize="40" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="srbY">0</TextBlock>
-
-        </Grid>
-
-        <!--colonna 1-->
-        <Grid Grid.Row="3" Grid.Column="1">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="30"></RowDefinition>
-                <RowDefinition></RowDefinition>
-            </Grid.RowDefinitions>
-
-            <Button Grid.Row="0" Background="Black" Foreground="White" Click="Button_Click_13">Ricarica serbatoio</Button>
-            <TextBlock Grid.Row="1" Background="Black" IsEnabled="False"></TextBlock>
-            <TextBlock Grid.Row="1" FontSize="40" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" x:Name="srbB">0</TextBlock>
+            <!--riga 5-->
+            <Button Grid.Row="5" Grid.ColumnSpan="5" Click="Button_Click_14">Random all</Button>
 
         </Grid>
 
 
         <!--riga 4-->
         <!--STAMPA-->
-        <Button Grid.Row="4" Grid.Column="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="30" Click="Button_Click_14">STAMPA RANDOMICA</Button>
-        <Button Grid.Row="4" Grid.Column="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="30" Click="Button_Click_15">STAMPA PERSONALIZZATA</Button>
+        <Button Grid.Row="4" Grid.ColumnSpan="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="30" Click="Button_Click_15" FontWeight="Black">STAMPA</Button>
     </Grid>
 
 </Window>
