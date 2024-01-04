@@ -21,6 +21,16 @@ La sezione dedicata ai fogli permette di osservare di quanti fogli si dispone e,
 Esempio:<br>
 <img src="https://github.com/MichelleMyBad/WPFStampante/assets/127590227/787ad060-0cdb-43e5-9fa2-bbf7f025dbc9" width="500">
 <img src="https://github.com/MichelleMyBad/WPFStampante/assets/127590227/945a8613-61ee-43f6-84ce-8e4e7d036d51" width="500">
+<br><br>
 
+<b>Creazione pagina<b><br>
+<img src="https://github.com/MichelleMyBad/WPFStampante/assets/127590227/ddc77581-4f8d-4bfe-ab1b-efe84927ad43"><br>
+Per la creazione della pagina è possibile scegliere un valore da 0 a 3 manualmente, randomicamente o generare randomicamente l'intera pagina.
+<br><br>
 
-Per emulare una stampante è stata gestita la generazione (randomica) e/o personalizzazione del quantitativo di inchiostro da utilizzare per ogni stampa, una volta stampata la pagina definita precedentemente, verrà rimosso il quantitativo di inchiostro utilizzato e i foglio usati. È possibile ricaricare anche i fogli.
+<b>Stampa</b><br>
+<img src="https://github.com/MichelleMyBad/WPFStampante/assets/127590227/bbe43679-2d06-4797-b7ad-b161c0108aaf"><br>
+Troviamo infine il pulsante di stampa, che, una volta premuto, simulerà una stamba, andando quindi a rimuovere  dai serbatoi dei diversi colori quanto indicato nella sezione precedente.<br>
+Esempio:<br>
+<img src="https://github.com/MichelleMyBad/WPFStampante/assets/127590227/c8fa9ba0-d70e-4d0a-9516-20cfddd29dc0" width="500">
+<img src="https://github.com/MichelleMyBad/WPFStampante/assets/127590227/30c2bd42-e36e-4dc3-886b-3e1df296c44c" width="500">
