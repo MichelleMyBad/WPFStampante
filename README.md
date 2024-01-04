@@ -23,8 +23,8 @@ Esempio:<br>
 <img src="https://github.com/MichelleMyBad/WPFStampante/assets/127590227/945a8613-61ee-43f6-84ce-8e4e7d036d51" width="500">
 <br><br>
 
-<b>Creazione pagina<b><br>
-<img src="https://github.com/MichelleMyBad/WPFStampante/assets/127590227/ddc77581-4f8d-4bfe-ab1b-efe84927ad43"><br>
+<b>Creazione pagina</b><br>
+<img src="https://github.com/MichelleMyBad/WPFStampante/assets/127590227/4de1da86-bdaa-4daa-8c89-261df35e3e34"><br>
 Per la creazione della pagina è possibile scegliere un valore da 0 a 3 manualmente, randomicamente o generare randomicamente l'intera pagina.
 <br><br>
 
