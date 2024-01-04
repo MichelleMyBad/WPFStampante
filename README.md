@@ -16,7 +16,8 @@ La sezione dedicata agli inchiostri permette di ricaricarli tramite pulsante app
 <br><br>
 
 <b>Fogli</b><br><br>
-<img src="https://github.com/MichelleMyBad/WPFStampante/assets/127590227/78678cf1-f2d2-4056-beac-60ebf8a1e9d6"><br>
+
+<img src="https://github.com/MichelleMyBad/WPFStampante/assets/127590227/3f0958f2-f47b-4085-a9b2-baa7f29cc51c"><br>
 La sezione dedicata ai fogli permette di osservare di quanti fogli si dispone e, in caso necessario, di ricaricare il serbatoio : basterà inserire i fogli che si desiderano inserire nella sezione destra, in caso si inserisca un numero di fogli maggiore di quanti ne possa tenere il serbatoio quelli in eccesso rimarranno nella sezione precedentemente citata.<br><br>
 <img src="https://github.com/MichelleMyBad/WPFStampante/assets/127590227/787ad060-0cdb-43e5-9fa2-bbf7f025dbc9">
 <img src="https://github.com/MichelleMyBad/WPFStampante/assets/127590227/945a8613-61ee-43f6-84ce-8e4e7d036d51">
