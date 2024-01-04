@@ -1,5 +1,5 @@
 # WPFStampante
-Esercizio WPF che si occupa di emulare una stampante. <br><br>
+Esercizio WPF che si occupa di emulare una stampante persistente. <br><br>
 
 <b>UML</b> <br><br>
 <img src="https://github.com/MichelleMyBad/WPFStampante/assets/127590227/60d17ba5-4133-48fc-92e4-e63b81f58442">
@@ -34,5 +34,9 @@ Troviamo infine il pulsante di stampa, che, una volta premuto, simulerà una sta
 Esempio:<br>
 <img src="https://github.com/MichelleMyBad/WPFStampante/assets/127590227/c8fa9ba0-d70e-4d0a-9516-20cfddd29dc0" width="500">
 <img src="https://github.com/MichelleMyBad/WPFStampante/assets/127590227/024d0e71-72eb-4711-ab91-dcffb1f1db4d" width="500">
+<br><br>
+
+<b>Persistenza della stampante</b><br>
+Con "persistenza" si intende il mantenimento dello stato della stampante alla chiusura dell'applicazione. Il programma salverà lo stato dei diversi serbatoi e impostazioni della pagina in un file csv, che utilizzerà poi per ricaricarli una volta riaperta.
 
 
