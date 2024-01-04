@@ -33,4 +33,6 @@ Per la creazione della pagina è possibile scegliere un valore da 0 a 3 manualme
 Troviamo infine il pulsante di stampa, che, una volta premuto, simulerà una stamba, andando quindi a rimuovere  dai serbatoi dei diversi colori quanto indicato nella sezione precedente.<br>
 Esempio:<br>
 <img src="https://github.com/MichelleMyBad/WPFStampante/assets/127590227/c8fa9ba0-d70e-4d0a-9516-20cfddd29dc0" width="500">
-<img src="https://github.com/MichelleMyBad/WPFStampante/assets/127590227/30c2bd42-e36e-4dc3-886b-3e1df296c44c" width="500">
+<img src="https://github.com/MichelleMyBad/WPFStampante/assets/127590227/024d0e71-72eb-4711-ab91-dcffb1f1db4d" width="500">
+
+
